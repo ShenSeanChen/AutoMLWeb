@@ -5,3 +5,8 @@ An interactive web application that provides automative and interactive data wra
 Erqing (Anthea) Li: erqingli719@gmail.com \
 Runlong (Edwin) Yu: edwyrl@gmail.com \
 Shen (Sean) Chen: seanchen9832@gmail.com
+
+# Tutorials
+------ demo_app ------- \
+gh repo clone ShenSeanChen/AutoMLWeb \
+python manage.py runserver \
