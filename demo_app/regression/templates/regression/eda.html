@@ -1,0 +1,16 @@
+{% extends "regression/layout.html" %}
+
+{% block body %}
+    <form action="{% url 'regression:eda %}" method="post">
+      {% csrf_token %}
+      {{ form }}
+      <!-- <input type="text" name="task"> -->
+      <!-- <input type="submit" > -->
+    </form>
+
+    <!-- {% autoescape off %}
+    {{ plot_div }}
+    {% endautoescape %} -->
+    <a href="{% url 'regression:index' %}">Back to Main Page</a>
+{% endblock %}
+

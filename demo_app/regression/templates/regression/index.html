@@ -1,0 +1,15 @@
+
+
+{% extends "regression/layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    <ul>
+        {% for item in Lists %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'regression:uploadcsv' %}">Upload CSV Data</a>
+    <a href="{% url 'regression:eda' %}">Explorative Data Analysis</a>
+{% endblock %}
+
