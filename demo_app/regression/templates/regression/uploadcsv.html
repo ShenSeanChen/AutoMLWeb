@@ -1,0 +1,18 @@
+
+{% extends "regression/layout.html" %}
+
+{% block body %}
+    <h1>Tasks</h1>
+    <form action="{% url 'regression:uploadcsv' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!-- <input type="file" name="csv_file" /> -->
+        <input type="submit">
+    </form>
+    <a href="{% url 'regression:index' %}">Back to Main Page</a>
+{% endblock %}
+
+
+
+
+
