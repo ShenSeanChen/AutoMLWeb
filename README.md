@@ -9,4 +9,4 @@ Shen (Sean) Chen: seanchen9832@gmail.com
 # Tutorials
 ------ demo_app ------- \
 gh repo clone ShenSeanChen/AutoMLWeb \
-python manage.py runserver \
+python manage.py runserver 
