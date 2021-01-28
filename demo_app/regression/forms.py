@@ -5,3 +5,4 @@ class NewDataForm(forms.ModelForm):
     class Meta:
         model = csvInput
         fields = '__all__'
+    

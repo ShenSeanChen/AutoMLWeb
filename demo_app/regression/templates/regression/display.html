@@ -1,0 +1,12 @@
+<h1>{{ csvinput.task }}</h1>
+
+
+ <p>
+   Data name: {{csvinput.task}} <br>
+ </p>
+<div>
+ {{ csvinput.get_data | safe }}
+</div>
+
+
+<a href="{% url 'regression:uploaded' %}">Back</a>

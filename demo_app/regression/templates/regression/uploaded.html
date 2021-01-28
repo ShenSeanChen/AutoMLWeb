@@ -1,0 +1,12 @@
+
+{% if data_list %}
+    <ul>
+    {% for d in data_list %}
+        <li><a href="{% url 'regression:display' d.id %}">{{ d.task }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No data are available.</p>
+{% endif %}
+<a href="{% url 'regression:index' %}">Back to Main Page</a>
+
